@@ -1,6 +1,9 @@
 const express = require('express');
-
+const routes = require('./routes');
 const app = express();
+
+app.use(express.json());
+app.use(routes);
 
 /**
  * ROTA / RECURSO
@@ -22,13 +25,6 @@ const app = express();
    * Route Params: Parâmetros utilizados para identificar recursos "/:Id"
    * Request Params: Corpo da requisição, utilizado para criar ou alterar recurso
    */
-
-app.get('/users', (request, response) => {
-    return response.json({
-        evento: "Semana Teste 0.0.0",
-        pessoa: "Fernando Silva Noleto"
-    });
-});
 
 app.listen(3333); //acessar através do ip do navegador
 
