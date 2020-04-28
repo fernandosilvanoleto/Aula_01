@@ -1,3 +1,50 @@
-h1 {
-    color: rgb(100, 237, 157);
+.logon-controller {
+    width: 100%;
+    max-width: 120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logon-controller section.form {
+    width: 100%;
+    max-width: 350px;
+    margin: 300px;
+}
+
+.logon-controller section.form form {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.logon-controller section.form h1 {    
+    width: 500%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.logon-controller section.form a {
+    width: 500%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.logon-controller section.form a svg {
+    margin-right: 8px;
+}
+
+.logon-controller section.form a:hover {
+    opacity: 0.8;
 }
