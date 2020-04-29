@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './global.css';
 
-import Logon from './pages/Logon';
+import Routes from './routes';
 
 // quando o código em html está integrado dentro do js é chamado de JSX
 function App() {
@@ -27,7 +27,7 @@ function App() {
   */
 
   return (
-    <Logon />
+    <Routes />
   );
 }
 
