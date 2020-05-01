@@ -7,11 +7,13 @@ import './styless.css';
 import logoImg from '../../assets/Logo.png';
 
 export default function Profile(){
+    const ongName = localStorage.getItem('ongName');
+
     return (
         <div className="profile-container">
             <header>
                 <img src={logoImg} alt="Logo" />
-                <span>Bem-Vinda, APAD</span>
+                <span>Bem-Vinda, {ongName}</span>
 
                 <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
                 <button type="button">
