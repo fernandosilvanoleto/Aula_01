@@ -15,7 +15,7 @@ routes.get('/profile', ProfileController.index);
 
 routes.post('/incidents', IncidentController.create);
 routes.get('/incidents', IncidentController.index);
-routes.delete('incidents/:id', IncidentController.delete);
+routes.delete('incidents/id', IncidentController.delete);
 
 // exportando rotas, faz isso para outro arquivo conseguir ver
 module.exports = routes;

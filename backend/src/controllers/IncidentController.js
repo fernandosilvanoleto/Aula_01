@@ -24,10 +24,10 @@ module.exports = {
         const ong_id = request.headers.authorization;
 
        const [id] = await connection('incidents').insert({
-            'title':"Caso 2 - Fernando",
-            'description':"Caso teste 2 - Ceulp/Ulbra",
-            'value':100,
-            'ong_id': "5c824d71",
+            title,
+            description,
+            value,
+            ong_id,
         });
         return response.json({ id });
     },
